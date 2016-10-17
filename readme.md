@@ -1,37 +1,44 @@
 ---
-title: Classification Lab
+title: KNN Classification Lab
 type: lab
 duration: "1:25"
 creator:
-    name: Jonathan Balaban
-    city:
+    name: Arun Ahuja
+    city: NYC
+
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Classification Lab
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) KNN Classification Lab
 
 ## Introduction
 
-> ***Note:*** _This can be a pair programming activity or done independently._
-
-Logistic regression (logit) is a classification modeling method, and one of the most popular and widely used learning algorithms. Use the breast cancer dataset to illustrate your understanding of Logistic Regression and predict classes.
+This lab demonstrates your knowledge and understanding of kNN classifications on a dataset using Python syntax and the kNN functions in scikit-learn.
 
 ## Exercise
 
+Using the [wine quality dataset](https://s3.amazonaws.com/demo-datasets/wine.csv), build a kNN classifier to predict whether wines are high or low quality.
+
+- Determine what relevant features might determine whether a wine is high or low quality.
+- Build a feature matrix and target variable with the relevant predictive variables and scale the dataset appropriately.
+- Build a KNN model to predict the target (high_quality) variable and evaluate the model's accuracy
+- Determine the best k-value by looping through a range
+
 #### Requirements
-- Read in Breast Cancer Dataset
-- Identify features and target
-- Use logistic regression from Scikit-Learn
 
-####Datasets
+- Develop a Python program to perform kNN Classification on the dataset
+- Tune the kNN model by finding the optimal K value
 
-- [Breast cancer dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data)
+#### Starter code
+- Python [Starter Code](./code/starter-code/starter-code.ipynb)
+
+> [Solution code is here!](./code/solution-code/solution-code.ipynb)
 
 #### Deliverable
 
-- The purpose of this lab is to practice performing Classifications using Logistic Regression.
-- Demonstrate reading a data file, separating features and target, and fitting a logit model.
-- Perform classifications (predictions) on new data
+- Outline Python program to perform kNN Classification
+- Create a writeup on the interpretation of findings
 
-## Starter Code
-- Python [Starter Code](./code/starter-code/week4-1.4-starter-cancer.ipynb)
-- Bonus: [kNN Approach](./code/starter-code/week4-1.4-starter.ipynb)
+## Additional Resources
+- [Predicting Wine Quality](http://fastml.com/predicting-wine-quality/)
+- [The importance of preprocessing in data science and the machine learning pipeline I: centering, scaling and k-Nearest Neighbors](https://www.datacamp.com/community/tutorials/the-importance-of-preprocessing-in-data-science-and-the-machine-learning-pipeline-i-centering-scaling-and-k-nearest-neighbours#gs.L7PpaZE)
+- [Exploratory Data Analysis on the Wine Dataset](https://onlinecourses.science.psu.edu/stat857/node/224)
